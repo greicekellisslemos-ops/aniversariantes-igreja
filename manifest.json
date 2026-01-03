@@ -1,0 +1,53 @@
+{
+  "background_color": "#ffffff",
+  "description": "Aniversariantes Igreja",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "meucronogramavocal.my.canva",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "meucronogramavocal.my.canva",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://meucronogramavocal.my.canva.site/_assets/images/e53c4bd8da5e491d9ab09e7cf0daf874.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 192,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": true
+    },
+    {
+      "src": "https://meucronogramavocal.my.canva.site/_assets/images/2d0b56e7e51cf11036ad8734bdb67e2d.png",
+      "type": "image/png",
+      "sizes": "32x32",
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 32,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    },
+    {
+      "src": "https://meucronogramavocal.my.canva.site/_assets/images/725b756a69a7d4c235070e51acd85560.png",
+      "type": "image/png",
+      "sizes": "180x180",
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 180,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ]
+}
