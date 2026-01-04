@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head> <script>
-  // Senha para acessar o site
-  const senhaCorreta = "igreja2026"; // coloque a senha que você quiser
-
-  // Checar se a senha já foi validada
-  if (!sessionStorage.getItem("senhaValidada")) {
-    let senha = prompt("Digite a senha para acessar o site:");
-    
-    if (senha === senhaCorreta) {
-      sessionStorage.setItem("senhaValidada", "true"); // lembra que passou
-    } else {
-      alert("Senha incorreta. Você será redirecionado.");
-      window.location.href = "https://google.com"; // ou outra página segura
-    }
-  }
-</script>
-
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Aniversariantes da Igreja</title>
 
+  <!-- Ícone do app -->
   <link rel="icon" href="icon-500.png">
   <link rel="apple-touch-icon" href="icon-500.png">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#8B0000">
-</head>
 
-  <meta charset="UTF-8">
-  <title>Aniversariantes da Igreja</title>
-
-  <!-- Manifesto -->
-  <link rel="manifest" href="manifest.json">
-
-  <!-- Mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Cor do app -->
-  <meta name="theme-color" content="#8B0000">
-
-  <!-- Redirecionamento -->
-  <meta http-equiv="refresh" content="0; url=https://meucronogramavocal.my.canva.site/aniversariantes-igreja">
+  <!-- Script de senha (uma vez por sessão) -->
+  <script>
+    const senhaCorreta = "igreja2026"; // sua senha
+    if (!sessionStorage.getItem("senhaValidada")) {
+      let senha = prompt("Digite a senha para acessar o site:");
+      if (senha === senhaCorreta) {
+        sessionStorage.setItem("senhaValidada", "true"); // senha ok, não pede de novo na sessão
+      } else {
+        alert("Senha incorreta. Você será redirecionado.");
+        window.location.href = "https://google.com"; // página segura
+      }
+    }
+  </script>
 </head>
 <body>
-  <p>Redirecionando...</p>
-</body>
+  <h1>Aniversariantes da Igreja</h1>
 
+  <!-- Aqui vai o conteúdo do seu site -->
+  <!-- Exemplo de tabela ou embed do Canva -->
+  <iframe src="https://meucronogramavocal.my.canva.site/aniversariantes-igreja/" 
+          width="100%" height="1000" style="border:none;"></iframe>
+
+</body>
 </html>
+
+
+
 
