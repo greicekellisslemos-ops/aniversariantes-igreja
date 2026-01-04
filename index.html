@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+<head> <script>
+  // Senha para acessar o site
+  const senhaCorreta = "igreja2026"; // coloque a senha que você quiser
+
+  // Checar se a senha já foi validada
+  if (!sessionStorage.getItem("senhaValidada")) {
+    let senha = prompt("Digite a senha para acessar o site:");
+    
+    if (senha === senhaCorreta) {
+      sessionStorage.setItem("senhaValidada", "true"); // lembra que passou
+    } else {
+      alert("Senha incorreta. Você será redirecionado.");
+      window.location.href = "https://google.com"; // ou outra página segura
+    }
+  }
+</script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -32,3 +48,4 @@
 </body>
 
 </html>
+
